@@ -3,3 +3,10 @@
 *.swp
 *.swo
 .worktrees/
+
+# Jekyll build output & caches
+_site/
+.jekyll-cache/
+.jekyll-metadata
+Gemfile.lock
+vendor/
