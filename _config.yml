@@ -1,0 +1,26 @@
+title: Unsolicited Advice
+tagline: Sometimes snarky, always useful.
+description: Blunt, unsolicited advice for people trying to do useful work on AI risk.
+url: https://unsolicitedadvice.ai
+author: Dan Parshall
+
+collections:
+  guides:
+    output: true
+    permalink: /:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: guides
+    values:
+      layout: guide
+
+# Files/dirs Jekyll should not treat as site content.
+exclude:
+  - README.md
+  - CLAUDE.md
+  - .worktrees
+  - Gemfile
+  - Gemfile.lock
+  - vendor

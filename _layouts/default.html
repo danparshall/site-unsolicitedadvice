@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>{% if page.title and page.url != "/" %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <link rel="stylesheet" href="{{ '/fast.css' | relative_url }}">
+  </head>
+  <body>
+
+    <h1><a href="{{ '/' | relative_url }}" style="color:inherit;text-decoration:none;">{{ site.title }}</a></h1>
+    <p><em>{{ site.tagline }}</em></p>
+    <div class="topnav">
+      <a {% if page.url == "/" %}class="active" {% endif %}href="{{ '/' | relative_url }}">Home</a>
+      <a {% if page.url == "/about/" %}class="active" {% endif %}href="{{ '/about/' | relative_url }}">About</a>
+    </div>
+
+    {{ content }}
+
+  </body>
+</html>
